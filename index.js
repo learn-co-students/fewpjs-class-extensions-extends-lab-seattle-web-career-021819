@@ -34,12 +34,9 @@ class Triangle extends Polygon {
 class Square extends Polygon {
   get isValid() {
     if (this.getCount === 4) {
-      let side1 = this.sides[0]
-      let side2 = this.sides[1]
-      let side3 = this.sides[2]
-      let side4 = this.sides[3]
+      let [a, b, c, d] = arr.slice(0, 4)
 
-      if ((side1 === side2) && (side2 === side3) && (side3 === side4)) {
+      if ((a === b) && (b === c) && (c === d)) {
         return true
       }
     }
