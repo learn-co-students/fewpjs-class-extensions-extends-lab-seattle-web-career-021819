@@ -13,9 +13,10 @@ calculate different properties of multiple shape. We'll be using JavaScript's
 ## Practice Writing JavaScript classes That Inherit From Other Classes
 
 1. Define a `Polygon` class. `Polygon` will accept an `Array` of integers as a
-paremeter, which will represent the length of each side of a shape.
-* Use the `get` keyword to make a getter method `count` that counts the number of sides (each index in the array).
-* Use the `get` keyword to make a getter method `perimeter` that calculates the sum of all sides of the polygon.
+paremeter, which will represent each _side_ of a shape. 
+* Use the `get` keyword to make a getter method `countSides` that counts the number of sides (each index in the array).
+* Use the `get` keyword to make a getter method `perimeter` that calculates the sum of each side (each index in the array) of the polygon.
+ This method will become accessible to its child classes.
 
 2. Define a `Triangle` class that inherits from `Polygon`.
 * It will automatically have access to `count` and `perimeter` inherited from `Polygon`.
