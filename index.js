@@ -46,17 +46,6 @@ class Square extends Polygon {
   }
 
   get area() {
-    let [side1, side2, side3, side4] = this.sides
-    return side1 * side2
+    return (this.perimeter / 4) * (this.perimeter / 4)
   }
 }
-
-const square = new Square( [ 5, 5, 5, 5 ] )
-console.log('square sides: ' + square.sides);
-console.log('square perimeter: ' + square.perimeter);
-console.log('square valid? ' + square.isValid);
-
-// triangle = new Triangle([5,5,5])
-// console.log('triangle sides: ' + triangle.sides);
-// console.log('triangle perimeter: ' + triangle.perimeter);
-// console.log('triangle valid? ' + triangle.isValid);
