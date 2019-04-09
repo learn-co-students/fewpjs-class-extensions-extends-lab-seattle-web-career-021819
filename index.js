@@ -8,9 +8,8 @@ class Polygon {
   }
 
   get perimeter() {
-    let perimeter = 0
-    this.sides.forEach(side => {
-      perimeter += side
+    let perimeter = this.sides.reduce((accumulator, side) => {
+      return accumulator + side
     })
     return perimeter
   }
